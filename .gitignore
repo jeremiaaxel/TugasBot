@@ -1,0 +1,5 @@
+*.json
+
+configuration.py
+
+__pycache__

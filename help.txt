@@ -1,0 +1,21 @@
+Commands :
+ `$tugas [options]`     melihat tugas (terurut berdasarkan deadline terdekat)
+ `$guessilldie`         meninggoy
+ `$sheet`         melihat link google spreadsheet
+ `$schedule [options]`  melihat jadwal kuliah
+ `$help`                melihat tulisan ini
+
+options tugas :
+     `-a`, `all`        melihat seluruh tugas
+     `-B`, `besar`      melihat tugas besar
+     `-p`, `present`    melihat tugas tanpa yang lampau
+     `<no option>`    melihat tugas biasa
+
+options schedule :
+     `-p, present`    melihat jadwal hari ini
+     `<no option>`    melihat seluruh jadwal
+     `[angkatan]`     melihat jadwal suatu angkatan, default : 19
+
+in development :
+ `$add <details>`    menambahkan sebuah tugas
+     `<details>`      berisi mata kuliah, judul tugas, deadline, link`?`, keterangan lain`?`
