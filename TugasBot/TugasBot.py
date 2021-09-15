@@ -86,11 +86,9 @@ class TugasBot(TugasBotInterface):
     spreadsheet = dbh.getSpreadsheet(cfg.url_tugas)
     list_of_tugas = ListOfTugas.ListOfTugas()
     list_of_tugas = Parser.spreadsheetToTugases(spreadsheet)
-    ic(list_of_tugas.clean())
+    list_of_tugas.clean()
     list_of_tugas.sorted()
     list_of_tugas.getSpecific(self.parsed_message[1:])
-    for tugas in list_of_tugas.getTugases():
-      ic(tugas.getName())
 
     ### DISCORD SERVER ###
     if not isinstance(self.message.channel, discord.channel.DMChannel):

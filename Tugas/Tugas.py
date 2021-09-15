@@ -98,7 +98,6 @@ class Tugas:
     self.__deadline = self.formatedDate2Date(deadline)
   
   def getDeadline(self):
-    ic(self.__course, self.__name, self.__deadline)
     return self.__deadline
 
   def isEmpty(self):
