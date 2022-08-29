@@ -2,14 +2,11 @@ import datetime
 import pytz
 
 from datetime import datetime as strToDate
-from icecream import ic
+from Helper.dates import HARI, BULAN
 
 import configuration as cfg
 
 tz = pytz.timezone(cfg.tz)
-
-HARI = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu']
-BULAN = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
 
 class Tugas:
   def __init__(self, course=None, name=None, deadline=None, spec_link=None, desc=[], other=None):
@@ -98,6 +95,7 @@ class Tugas:
     self.__deadline = self.formatedDate2Date(deadline)
   
   def getDeadline(self):
+    ic(self.__course, self.__name, self.__deadline)
     return self.__deadline
 
   def isEmpty(self):

@@ -1,4 +1,5 @@
-from TugasBot import ScheduleInterface, TugasInterface
+from TugasBot import ScheduleInterface
+from Tugas import TugasInterface
 
 # python ga perlu interface tapi maksudnya biar rapi aja sih
 class TugasBotInterface():
